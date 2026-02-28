@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "{{fontname}}";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('../webfonts/{{fontname}}.woff2?t={{timestamp}}') format('woff2');
+}
+
+.ks {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-family: "{{fontname}}";
+  font-feature-settings: normal;
+  font-style: normal;
+  font-synthesis: none;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  text-rendering: auto;
+  width: 1.25em;
+}
+
+{{cssString}}
