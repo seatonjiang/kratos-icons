@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "kratos-icons";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('../webfonts/kratos-icons.woff2?t=1772290621132') format('woff2');
+}
+
+.ks {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-family: "kratos-icons";
+  font-feature-settings: normal;
+  font-style: normal;
+  font-synthesis: none;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  text-rendering: auto;
+  width: 1.25em;
+}
+
+.ks-angle-down::before { content: "\ea01"; }
+.ks-angle-left::before { content: "\ea02"; }
+.ks-angle-right::before { content: "\ea03"; }
+.ks-angle-up::before { content: "\ea04"; }
+.ks-arrow-down-long::before { content: "\ea05"; }
+.ks-arrow-down::before { content: "\ea06"; }
+.ks-arrow-left-long::before { content: "\ea07"; }
+.ks-arrow-left::before { content: "\ea08"; }
+.ks-arrow-right-long::before { content: "\ea09"; }
+.ks-arrow-right::before { content: "\ea0a"; }
+.ks-arrow-up-long::before { content: "\ea0b"; }
+.ks-arrow-up::before { content: "\ea0c"; }
+.ks-arrows-h::before { content: "\ea0d"; }
+.ks-arrows-v::before { content: "\ea0e"; }
+.ks-arrows::before { content: "\ea0f"; }
+.ks-bell::before { content: "\ea10"; }
+.ks-bilibili::before { content: "\ea31"; }
+.ks-caret-down::before { content: "\ea11"; }
+.ks-caret-left::before { content: "\ea12"; }
+.ks-caret-right::before { content: "\ea13"; }
+.ks-caret-up::before { content: "\ea14"; }
+.ks-check::before { content: "\ea15"; }
+.ks-chevron-down::before { content: "\ea16"; }
+.ks-chevron-left::before { content: "\ea17"; }
+.ks-chevron-right::before { content: "\ea18"; }
+.ks-chevron-up::before { content: "\ea19"; }
+.ks-circle-check::before { content: "\ea1a"; }
+.ks-circle-exclamation::before { content: "\ea1b"; }
+.ks-circle-info::before { content: "\ea1c"; }
+.ks-circle-plus::before { content: "\ea1d"; }
+.ks-circle-question::before { content: "\ea1e"; }
+.ks-circle-xmark::before { content: "\ea1f"; }
+.ks-cnb::before { content: "\ea32"; }
+.ks-copy::before { content: "\ea22"; }
+.ks-dashboard-experiment::before { content: "\ea25"; }
+.ks-dashboard-mailer::before { content: "\ea28"; }
+.ks-dashboard-rocket::before { content: "\ea2a"; }
+.ks-dashboard-settings::before { content: "\ea2c"; }
+.ks-dashboard-unit::before { content: "\ea2f"; }
+.ks-docker::before { content: "\ea33"; }
+.ks-douyin::before { content: "\ea34"; }
+.ks-epicgames::before { content: "\ea35"; }
+.ks-exclamation::before { content: "\ea24"; }
+.ks-facebook::before { content: "\ea36"; }
+.ks-gitcode::before { content: "\ea37"; }
+.ks-gitea::before { content: "\ea38"; }
+.ks-gitee::before { content: "\ea39"; }
+.ks-github::before { content: "\ea3a"; }
+.ks-gitlab::before { content: "\ea3b"; }
+.ks-indent::before { content: "\ea27"; }
+.ks-instagram::before { content: "\ea3c"; }
+.ks-kratos::before { content: "\ea3d"; }
+.ks-kuaishou::before { content: "\ea3e"; }
+.ks-linkedin::before { content: "\ea3f"; }
+.ks-nintendo::before { content: "\ea40"; }
+.ks-npm::before { content: "\ea41"; }
+.ks-outdent::before { content: "\ea29"; }
+.ks-overview-admin::before { content: "\ea53"; }
+.ks-overview-comment::before { content: "\ea54"; }
+.ks-overview-component::before { content: "\ea20"; }
+.ks-overview-conditions::before { content: "\ea21"; }
+.ks-overview-decorate::before { content: "\ea23"; }
+.ks-overview-flashlight::before { content: "\ea26"; }
+.ks-overview-post::before { content: "\ea55"; }
+.ks-overview-user::before { content: "\ea56"; }
+.ks-paypal::before { content: "\ea42"; }
+.ks-playstation::before { content: "\ea43"; }
+.ks-prophet::before { content: "\ea57"; }
+.ks-qq::before { content: "\ea44"; }
+.ks-qzone::before { content: "\ea45"; }
+.ks-reddit::before { content: "\ea46"; }
+.ks-search::before { content: "\ea2b"; }
+.ks-steam::before { content: "\ea47"; }
+.ks-telegram::before { content: "\ea48"; }
+.ks-tieba::before { content: "\ea49"; }
+.ks-toggle-off::before { content: "\ea2d"; }
+.ks-toggle-on::before { content: "\ea2e"; }
+.ks-tumblr::before { content: "\ea4a"; }
+.ks-twitch::before { content: "\ea4b"; }
+.ks-weibo::before { content: "\ea4c"; }
+.ks-weixin::before { content: "\ea4d"; }
+.ks-x::before { content: "\ea4e"; }
+.ks-xbox::before { content: "\ea4f"; }
+.ks-xiaohongshu::before { content: "\ea50"; }
+.ks-xmark::before { content: "\ea30"; }
+.ks-youtube::before { content: "\ea51"; }
+.ks-zhihu::before { content: "\ea52"; }
+
