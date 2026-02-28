@@ -1,0 +1,38 @@
+{
+  "name": "@seatonjiang/kratos-icons",
+  "description": "Kratos Icon Library, featuring both basic icons and brand icons.",
+  "version": "2026.02.28",
+  "license": "MIT",
+  "author": {
+    "name": "Seaton Jiang",
+    "email": "hi@seatonjiang.com",
+    "url": "https://seatonjiang.com"
+  },
+  "keywords": [
+    "kratos",
+    "icons",
+    "svg",
+    "webfont"
+  ],
+  "files": [
+    "css",
+    "webfonts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seatonjiang/kratos-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seatonjiang/kratos-icons/issues",
+    "email": "hi@seatonjiang.com"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "devDependencies": {
+    "ejs": "^4.0.1",
+    "esbuild": "^0.27.3",
+    "svgtofont": "^6.5.1"
+  }
+}
