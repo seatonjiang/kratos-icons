@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="<%= cssHref %>">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .preview {
+      width: 100px;
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+      vertical-align: top;
+    }
+    .preview .inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 85px;
+      position: relative;
+      background: #f5f5f5;
+      -webkit-border-radius: 3px 3px 0 0;
+      -moz-border-radius: 3px 3px 0 0;
+      border-radius: 3px 3px 0 0;
+    }
+    .preview .inner {
+      font-size: 40px;
+      color: #333;
+    }
+    .label {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 5px;
+      font-size: 10px;
+      font-family: Monaco, monospace;
+      color: #666;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background: #ddd;
+      -webkit-border-radius: 0 0 3px 3px;
+      -moz-border-radius: 0 0 3px 3px;
+      border-radius: 0 0 3px 3px;
+      color: #666;
+      height: 22px;
+      line-height: 12px;
+    }
+    .preview.copied .label {
+      background: #cfe9cf;
+      color: #2d7a2d;
+    }
+  </style>
+</head>
+<body>
+  <h1><%= pageTitle %></h1>
+  <div class="icon-grid">
+    <% glyphs.forEach(icon => { %>
+    <div class="preview">
+      <span class="inner" data-copy="<%= icon.name %>">
+        <i class="<%= baseClass %> <%= icon.name %>"></i>
+      </span>
+      <span class="label"><%= icon.name %></span>
+    </div>
+    <% }) %>
+  </div>
+  <script>
+    document.addEventListener("click", function (e) {
+      var target = e.target.closest(".preview");
+      if (!target) return;
+      var inner = target.querySelector(".inner");
+      var text = inner ? inner.getAttribute("data-copy") : "";
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () {
+          target.classList.add("copied");
+          clearTimeout(target.__labelTimer);
+          target.__labelTimer = setTimeout(function () {
+            target.classList.remove("copied");
+          }, 1200);
+          var label = target.querySelector(".label");
+          if (label) {
+            var original = label.textContent;
+            label.textContent = "已复制";
+            clearTimeout(target.__labelTextTimer);
+            target.__labelTextTimer = setTimeout(function () {
+              label.textContent = original;
+            }, 1200);
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
